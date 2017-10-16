@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard1.3;net45</TargetFrameworks>
+    <Description>An NLog target that utilises the elasticsearch low level client.</Description>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/ReactiveMarkets/NLog.Targets.ElasticSearch/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/ReactiveMarkets/NLog.Targets.ElasticSearch</PackageProjectUrl>
+    <PackageTags>NLog logging target log elasticsearch elastic search</PackageTags>
+    <Authors>ReactiveMarkets</Authors>
+    <Company>ReactiveMarkets</Company>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Elasticsearch.Net" Version="5.2.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
+    <PackageReference Include="NLog" Version="5.0.0-beta06" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard1.3' ">
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="1.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="1.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="1.0.2" />
+  </ItemGroup>
+
+</Project>
