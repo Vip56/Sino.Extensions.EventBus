@@ -3,6 +3,8 @@
 由于公司的项目均采用[.Net Core](http://dot.net)运行于基于Ubuntu 16.04的Docker之上，所以之前的.Net Framework下的方案均不可用，而因为[Masstransit](http://masstransit-project.com/)并未提供基于[.Net Core](http://dot.net)
 的SDK，所以在结合诸多开源项目以及我们自己的实际需求之后通过改写从而诞生了该库。  
 
+[![Build status](https://ci.appveyor.com/api/projects/status/x5j1d91cqlqtg2lt/branch/master?svg=true)](https://ci.appveyor.com/project/vip56/sino-extensions-eventbus/branch/master)
+
 # 快速使用  
 ### 1. 配置
 打开`appsettings.json`并增加如下配置信息：
