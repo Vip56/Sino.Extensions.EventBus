@@ -42,7 +42,7 @@ namespace Sino.Extensions.EventBus.Consumer
                         BasicAck(channel, args);
                         return;
                     }
-                    _logger.LogInformation($"接收事件: MessageId: {args.BasicProperties.MessageId}");
+                    _logger.LogInformation($"ConsumerMessageId: {args.BasicProperties.MessageId}");
                     rawConsumer
                         .OnMessageAsync(sender, args)
                         .ContinueWith(t =>

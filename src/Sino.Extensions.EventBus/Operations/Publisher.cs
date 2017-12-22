@@ -37,6 +37,8 @@ namespace Sino.Extensions.EventBus.Operations
         public Task PublishAsync<TMessage>(TMessage message, PublishConfiguration config)
         {
             var props = _propertiesProvider.GetProperties<TMessage>(config.PropertyModifier);
+            var messageId = props.MessageId;
+            var messageType = props.Headers[PropertyHeaders.MessageType];
 
             Task exchangeTask;
             lock (_topologyLock)
@@ -66,6 +68,7 @@ namespace Sino.Extensions.EventBus.Operations
                             body: _serializer.Serialize(message),
                             mandatory: (config.BasicReturn != null)
                         );
+                        _logger.LogDebug($"PublishMessageId:{messageId} MessageType:{messageType}");
                         return ackTask
                         .ContinueWith(a => {
                             channelTask.Result.BasicReturn -= config.BasicReturn;
