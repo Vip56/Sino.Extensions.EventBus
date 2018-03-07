@@ -4,6 +4,7 @@
 的SDK，所以在结合诸多开源项目以及我们自己的实际需求之后通过改写从而诞生了该库。  
 
 [![Build status](https://ci.appveyor.com/api/projects/status/x5j1d91cqlqtg2lt/branch/master?svg=true)](https://ci.appveyor.com/project/vip56/sino-extensions-eventbus/branch/master)
+[![NuGet](https://img.shields.io/nuget/v/Nuget.Core.svg?style=plastic)](https://www.nuget.org/packages/Sino.Extensions.EventBus)   
 
 # 快速使用  
 ### 1. 配置
@@ -213,3 +214,4 @@ Install-Package NLog.Targets.ElasticSearch
 - 17.9.11 将项目升级到VS2017
 - 17.9.19 补充文档
 - 17.9.20 增加ElasticSearch日志记录
+- 18.3.7 支持asp.net core 2.0 by y-z-f

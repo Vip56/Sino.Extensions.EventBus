@@ -1,0 +1,10 @@
+version: '{build}'
+branches:  
+  only:
+  - master
+build_script:
+- ps: .\Build.ps1
+test: off
+artifacts:  
+- path: .\src\Sino.Extensions.EventBus\artifacts\*.nupkg
+  name: NuGet

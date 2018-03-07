@@ -20,13 +20,12 @@ namespace Sino.Extensions.EventBus.Serialization
         {
             _serializer = new JsonSerializer
             {
-                TypeNameAssemblyFormat = FormatterAssemblyStyle.Simple,
+                TypeNameAssemblyFormatHandling = TypeNameAssemblyFormatHandling.Simple,
                 Formatting = Formatting.None,
                 CheckAdditionalContent = true,
                 ContractResolver = new CamelCasePropertyNamesContractResolver(),
                 ObjectCreationHandling = ObjectCreationHandling.Auto,
                 DefaultValueHandling = DefaultValueHandling.Ignore,
-                //TypeNameHandling = TypeNameHandling.All,
                 ReferenceLoopHandling = ReferenceLoopHandling.Serialize,
                 MissingMemberHandling = MissingMemberHandling.Ignore,
                 PreserveReferencesHandling = PreserveReferencesHandling.Objects,
