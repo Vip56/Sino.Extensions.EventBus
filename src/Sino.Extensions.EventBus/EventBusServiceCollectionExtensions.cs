@@ -17,11 +17,21 @@ namespace Microsoft.Extensions.DependencyInjection
 {
     public static class EventBusServiceCollectionExtensions
     {
+        /// <summary>
+        /// 添加EventBus功能，通过IEventBus接口使用
+        /// </summary>
+        /// <param name="section">配置文件</param>
+        /// <param name="types">自动识别类</param>
         public static IServiceCollection AddEventBus(this IServiceCollection services, IConfigurationSection section, params Type[] types)
         {
             var mainCfg = new RabbitMqConfiguration();
             section.Bind(mainCfg);
-            services.AddSingleton(mainCfg);
+            return AddEventBus(services, mainCfg, types);
+        }
+
+        public static IServiceCollection AddEventBus(this IServiceCollection services, RabbitMqConfiguration config, params Type[] types)
+        {
+            services.AddSingleton(config);
 
             //自动扫描Handler并注册
             services.Scan(scan => scan.FromAssembliesOf(types)

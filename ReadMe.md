@@ -215,3 +215,4 @@ Install-Package NLog.Targets.ElasticSearch
 - 17.9.19 补充文档
 - 17.9.20 增加ElasticSearch日志记录
 - 18.3.7 支持asp.net core 2.0 by y-z-f
+- 18.3.16 增加单元测试和新的AddEventBus重载方法 by y-z-f

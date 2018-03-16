@@ -7,7 +7,7 @@
     <PackageProjectUrl>http://git.oschina.net/vip56/sino-extensions-eventbus</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>http://git.oschina.net/vip56/sino-extensions-eventbus</RepositoryUrl>
-    <Version>2.0.0-beta11</Version>
+    <Version>2.0.0-beta12</Version>
     <Description>事件总线</Description>
     <Authors>y-z-f</Authors>
     <PackageLicenseUrl>https://github.com/Vip56/sino-extensions-eventbus/blob/dev/LICENSE</PackageLicenseUrl>

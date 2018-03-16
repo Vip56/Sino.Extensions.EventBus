@@ -16,6 +16,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{F3782EE6-8
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sino.Extensions.EventBus", "src\Sino.Extensions.EventBus\Sino.Extensions.EventBus.csproj", "{E5D3A01D-DB09-4631-BFD5-826B9906592A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBusUnitTest", "test\EventBusUnitTest\EventBusUnitTest.csproj", "{5FB85D70-11BD-41C2-90D6-577745F74DA4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,12 +28,17 @@ Global
 		{E5D3A01D-DB09-4631-BFD5-826B9906592A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5D3A01D-DB09-4631-BFD5-826B9906592A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5D3A01D-DB09-4631-BFD5-826B9906592A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FB85D70-11BD-41C2-90D6-577745F74DA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FB85D70-11BD-41C2-90D6-577745F74DA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FB85D70-11BD-41C2-90D6-577745F74DA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FB85D70-11BD-41C2-90D6-577745F74DA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{E5D3A01D-DB09-4631-BFD5-826B9906592A} = {6BD50CC8-C6E0-47C5-B297-EB77B1A25B97}
+		{5FB85D70-11BD-41C2-90D6-577745F74DA4} = {F3782EE6-8C6A-4DB3-AEAA-523A74B1A69E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {801C56D1-475E-41BE-80A6-FC84262925FF}
