@@ -13,10 +13,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".global", ".global", "{289F
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{F3782EE6-8C6A-4DB3-AEAA-523A74B1A69E}"
+	ProjectSection(SolutionItems) = preProject
+		test\Dockerfile = test\Dockerfile
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sino.Extensions.EventBus", "src\Sino.Extensions.EventBus\Sino.Extensions.EventBus.csproj", "{E5D3A01D-DB09-4631-BFD5-826B9906592A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBusUnitTest", "test\EventBusUnitTest\EventBusUnitTest.csproj", "{5FB85D70-11BD-41C2-90D6-577745F74DA4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventBusUnitTest", "test\EventBusUnitTest\EventBusUnitTest.csproj", "{5FB85D70-11BD-41C2-90D6-577745F74DA4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
